@@ -61,8 +61,8 @@ small {
   display: inline-flex;
   align-items: center;
   position: relative;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }
 .icon-plus:before, .icon-plus:after {
   content: "";
@@ -101,6 +101,10 @@ ul {
 ul .icon {
   margin-right: 1.6rem;
 }
+ul img {
+  height: 1.6rem;
+  margin-right: 1.6rem;
+}
 ul:hover .icon-plus:after {
   transform: rotate(0deg);
 }
@@ -121,6 +125,8 @@ ul:hover .icon-plus:after {
 }
 
 li {
+  display: flex;
+  align-items: center;
   margin-bottom: 0.5rem;
 }
 
