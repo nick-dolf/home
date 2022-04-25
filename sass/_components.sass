@@ -1,0 +1,64 @@
+// Icons
+.icon-plus
+	display: inline-flex
+	align-items: center
+	position: relative
+	width: 1.6rem
+	height: 1.6rem
+
+	&:before, &:after
+		content: ""
+		position: absolute
+		height: .4rem
+		width: 1.6rem
+		background-color: white
+		transition: all 0.8s ease-in-out
+
+	&:after
+		transform: rotate(90deg)
+
+.icon-square
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	position: relative
+	width: 1.6rem
+	height: 1.6rem
+
+	&:after
+		content: ""
+		position: absolute
+		height: 0.4rem
+		width: 0.4rem
+		background-color: white
+
+
+// Lists
+ul
+	margin-top: 0
+	margin-bottom: 4rem
+	list-style-type: none
+	list-style-position: inside
+
+	.icon
+		margin-right: 1.6rem
+
+	&:hover
+		.icon-plus:after
+			transform: rotate(0deg)
+
+.list-centered
+	margin: auto
+	width: max-content
+	padding: 0
+
+.list-expandable
+	max-height: 3rem
+	overflow: hidden
+	transition: all 0.8s ease-in-out
+
+	&:hover
+		max-height: 50rem
+
+li
+	margin-bottom: 0.5rem

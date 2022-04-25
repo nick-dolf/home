@@ -1,32 +1,51 @@
+html
+	box-sizing: border-box
+
 body
-	width: 100vw
-	height: 100vh
+	min-width: 100vw
+	min-height: 100vh
 	margin: 0 auto
-	font-family: monospace
 	color: white
 	background-color: $background-color
 	display: flex
 	flex-direction: column
-	justify-content: center
+
+
+
+main
+	margin: 10vh auto 0 auto
+
+// Typography
+html
+	font-size: 62.5%
+	font-family: monospace
+
+body
+	font-size: 1.8rem
+	line-height: 1.5
 
 h1
 	text-align: center
+	font-size: 4rem
+	margin-bottom: .5rem
 
+h2
+	font-size: 2.4rem
+	font-weight: normal
+	margin-bottom: 0.25rem
+
+	a
+		text-decoration: none
 
 a
 	color: $link-color
-	text-decoration: none
 	font-style: italic
 
-a:hover
-	font-weight: bold
+	&:hover
+		font-weight: bold
 
-ul
-	list-style-type: square
-	list-style-position: inside
+small
+	font-size: 60%
 
-li
-	margin-top: 5px
-
-div
-	margin: auto
+.spacer
+	height: 8rem
