@@ -122,9 +122,6 @@ ul img {
   margin-top: 0.6rem;
   margin-right: 1.6rem;
 }
-ul:hover .icon-plus:after {
-  transform: rotate(0deg);
-}
 
 .list-centered {
   margin: auto;
@@ -136,9 +133,14 @@ ul:hover .icon-plus:after {
   max-height: 3rem;
   overflow: hidden;
   transition: all 0.8s ease-in-out;
+  cursor: pointer;
 }
-.list-expandable:hover {
+.list-expandable:focus {
+  cursor: default;
   max-height: 50rem;
+}
+.list-expandable:focus .icon-plus:after {
+  transform: rotate(0deg);
 }
 
 li {

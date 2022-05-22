@@ -48,10 +48,6 @@ ul
 		margin-top: .6rem
 		margin-right: 1.6rem
 
-	&:hover
-		.icon-plus:after
-			transform: rotate(0deg)
-
 .list-centered
 	margin: auto
 	width: max-content
@@ -61,9 +57,14 @@ ul
 	max-height: 3rem
 	overflow: hidden
 	transition: all 0.8s ease-in-out
+	cursor: pointer
 
-	&:hover
+	&:focus
+		cursor: default
 		max-height: 50rem
+
+		.icon-plus:after
+			transform: rotate(0deg)
 
 li
 	display: flex
