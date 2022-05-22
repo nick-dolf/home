@@ -1,19 +1,39 @@
 html {
   box-sizing: border-box;
+  min-width: 320px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 16px;
   color: white;
   background-color: blue;
   display: flex;
   flex-direction: column;
 }
 
+header {
+  height: 14rem;
+}
+@media screen and (min-width: 767px) {
+  header {
+    margin-top: 32px;
+  }
+}
+
 main {
-  margin: 10vh auto 0 auto;
+  margin: 32px auto;
+}
+@media screen and (min-width: 767px) {
+  main {
+    margin: 64px auto;
+  }
 }
 
 html {

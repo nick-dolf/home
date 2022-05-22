@@ -1,19 +1,32 @@
 html
 	box-sizing: border-box
+	min-width: 320px
+
+*, *:before, *:after
+	box-sizing: inherit
+
 
 body
 	min-width: 100vw
 	min-height: 100vh
 	margin: 0 auto
+	padding: 16px
 	color: white
 	background-color: $background-color
 	display: flex
 	flex-direction: column
 
+header
+	height: 14rem
 
+	@include tablet
+		margin-top: 32px
 
 main
-	margin: 10vh auto 0 auto
+	margin: 32px auto
+
+	@include tablet
+		margin: 64px auto
 
 // Typography
 html
@@ -23,6 +36,7 @@ html
 body
 	font-size: 1.8rem
 	line-height: 1.5
+
 
 h1
 	text-align: center
