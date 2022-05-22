@@ -73,10 +73,6 @@ small {
   font-size: 60%;
 }
 
-.spacer {
-  height: 8rem;
-}
-
 .icon-plus {
   display: inline-flex;
   align-items: center;
@@ -123,6 +119,7 @@ ul .icon {
 }
 ul img {
   height: 1.6rem;
+  margin-top: 0.6rem;
   margin-right: 1.6rem;
 }
 ul:hover .icon-plus:after {
@@ -146,8 +143,11 @@ ul:hover .icon-plus:after {
 
 li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 0.5rem;
+}
+li div.icon {
+  height: 2.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
