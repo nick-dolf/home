@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 16px;
   color: white;
-  background-color: blue;
+  background-color: #101CA7;
   display: flex;
   flex-direction: column;
 }
